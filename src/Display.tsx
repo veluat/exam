@@ -2,10 +2,11 @@ import React from 'react';
 
 type DisplayPropsType = {
     counter: number
+    max: number
 }
 
 export const Display = (props: DisplayPropsType) => {
     return (
-        <div className={props.counter === 5 ? 'red' : 'count'}>{props.counter}</div>
+        <div className={props.counter === props.max ? 'red' : 'count'}>{props.counter}</div>
     )
 }
