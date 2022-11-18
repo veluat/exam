@@ -25,7 +25,7 @@ function App() {
     return (
         <div className="App">
             <Display counter={counter} max={MAXVALUE}/>
-            <Button name={'Add'} isDisabled={counter === MAXVALUE} callback={onClickAddHandler}/>
+            <Button name={'Inc'} isDisabled={counter === MAXVALUE} callback={onClickAddHandler}/>
             <Button name={'Reset'} isDisabled={counter === STARTVALUE} callback={onClickResetHandler}/>
             <SelectButton selectStartNumber={selectStartNumber} counter={counter} />
         </div>
